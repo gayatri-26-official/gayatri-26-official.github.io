@@ -244,6 +244,33 @@
             margin-bottom: 15px;
             color: var(--secondary);
         }
+        
+        /* Values Section */
+        .values {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--darker) 100%);
+        }
+        
+        .values-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .value-item {
+            margin-bottom: 40px;
+        }
+        
+        .value-item h3 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .value-item p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
         /*Hobbie*/
         .hobbies {
             background: linear-gradient(135deg, var(--dark) 0%, var(--darker) 100%);
@@ -572,6 +599,7 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#values">Values</a></li>
                     <li><a href="#hobbies">Hobbies</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -619,8 +647,39 @@
             </div>
         </div>
     </section>
-       <!-- Hobbies Section -->
-       <section id="hobbies" class="hobbies">
+    
+    <!-- Values Section -->
+    <section id="values" class="values">
+        <div class="container">
+            <h2 class="section-title">My Core Values</h2>
+            <p style="text-align: center; margin-bottom: 40px; color: var(--text-light);">The principles that guide my work and life</p>
+            
+            <div class="values-content">
+                <div class="value-item">
+                    <h3>Continuous Learning</h3>
+                    <p>I believe in constantly expanding my knowledge and skills to stay at the forefront of technology. Every day is an opportunity to learn something new and improve my craft.</p>
+                </div>
+                
+                <div class="value-item">
+                    <h3>Precision</h3>
+                    <p>Attention to detail and accuracy are crucial in both coding and cybersecurity work. I take pride in delivering solutions that are not just functional but meticulously crafted.</p>
+                </div>
+                
+                <div class="value-item">
+                    <h3>Collaboration</h3>
+                    <p>The best solutions come from teamwork and diverse perspectives. I value open communication and believe that working together leads to more innovative and robust outcomes.</p>
+                </div>
+                
+                <div class="value-item">
+                    <h3>Integrity</h3>
+                    <p>Ethical practices and honesty form the foundation of my professional approach. I believe in doing what's right, not just what's easy or convenient.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
         <div class="container">
             <h2 class="section-title">My Hobbies & Interests</h2>
             <p style="text-align: center; margin-bottom: 40px; color: var(--text-light);">What I enjoy outside of coding</p>
@@ -767,7 +826,6 @@
             </div>
         </div>
     </section>
-    
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
