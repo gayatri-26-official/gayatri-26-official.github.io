@@ -245,6 +245,75 @@
             color: var(--secondary);
         }
         
+        /* Education Section */
+        .education {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--darker) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .education::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 20, 147, 0.1) 0%, transparent 70%);
+        }
+        
+        .education-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--primary);
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+        
+        .education-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(138, 43, 226, 0.3);
+        }
+        
+        .education-item h3 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .education-item .institution {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--text);
+        }
+        
+        .education-item .duration {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .education-item .achievements {
+            color: var(--text-light);
+            margin-top: 15px;
+        }
+        
+        .education-item .achievements li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .education-item .achievements li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+        
         /* Values Section */
         .values {
             background: linear-gradient(135deg, var(--dark) 0%, var(--darker) 100%);
@@ -599,6 +668,7 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#values">Values</a></li>
                     <li><a href="#hobbies">Hobbies</a></li>
                     <li><a href="#certificates">Certificates</a></li>
@@ -644,6 +714,49 @@
                         <span class="skill">Problem Solving</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">My Education</h2>
+            <p style="text-align: center; margin-bottom: 40px; color: var(--text-light);">My academic journey and achievements</p>
+            
+            <div class="education-item">
+                <h3>Bachelor of Engineering in Computer Science</h3>
+                <div class="institution">MIT Academy Of Engineering, Alandi</div>
+                <div class="duration">2024 - Present</div>
+                <p>Currently pursuing my degree with a focus on Machine Learning and Web development.</p>
+                <ul class="achievements">
+                    <li>Specializing in Python programming and data analysis</li>
+                    <li>Coursework includes algorithms, data structures, and network security</li>
+                </ul>
+            </div>
+            
+            <div class="education-item">
+                <h3>Higher Secondary Education (HSC)</h3>
+                <div class="institution">Shri Bhairavnath Secondary and Higher Secondary School, Bhosari</div>
+                <div class="duration">2022 - 2024</div>
+                <p>Completed with distinction in Science stream (PCMB).</p>
+                <ul class="achievements">
+                    <li>Scored 95.38%ile in MHT-CET 2024</li>
+                    <li>Mathematics: 97.27%ile | Physics: 90.40%ile | Chemistry: 91.51%ile</li>
+                    <li>Active participant in science fairs and math olympiads</li>
+                </ul>
+            </div>
+            
+            <div class="education-item">
+                <h3>Secondary School Education (SSC)</h3>
+                <div class="institution">Saraswati Bhuvan English Medium School</div>
+                <div class="duration">2020 - 2022</div>
+                <p>Completed with excellent academic performance.</p>
+                <ul class="achievements">
+                    <li>Scored 90.60% in SSC Exam</li>
+                    <li>Recipient of academic excellence award for mathematics</li>
+                    <li>Participated in inter-school science competitions</li>
+                </ul>
             </div>
         </div>
     </section>
